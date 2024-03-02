@@ -1,2 +1,2 @@
 # zmalski.github.io
-Personal website
+Personal website created with Tailwind CSS
