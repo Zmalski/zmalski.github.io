@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateTextGradient() {
     const colorfulText = document.getElementById('colorful-text');
     const gradient = generateRandomGradient();
-    console.log(gradient);
     
     colorfulText.style.backgroundImage = gradient;
     //colorfulText.transition = "all 1s ease-in-out";
