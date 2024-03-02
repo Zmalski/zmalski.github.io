@@ -1,295 +1,337 @@
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Zachary Maludzinski</title>
-    <meta name="description" content="Zachary Maludzinski's Personal Website">
-    <meta name="author" content="Zachary Maludzinski">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/modal.css">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-</head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link href="./src/output.css" rel="stylesheet" />
 
-<body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+      html {
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
+      }
 
-    <header>
-        <div class="collapse" id="navbarHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4>About</h4>
-                        <p class="text-muted">I'm currently living in Kelowna, BC. I have a number of hobbies including
-                            ball hockey, tennis, building computers and camping.
-                            I'm a team player and love to collaborate with others, because
-                            I value the unique perspectives that individuals can offer. Learning is a
-                            passion of mine and I strive to grow my skillset every day.
-                        </p>
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4>Contact</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="https://github.com/Zmalski" class="text-white">GitHub</a></li>
-                            <li><a href="https://www.linkedin.com/in/zachary-maludzinski/"
-                                    class="text-white">LinkedIn</a></li>
-                            <li><a href="mailto:zacharymaludzinski@gmail.com" class="text-white">Email me</a></li>
-                        </ul>
-                    </div>
-                </div>
+      #colorful-text {
+        text-align: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 300% 100%;
+        background-position: top left;
+        transition: background-position 1.5s ease-in-out;
+      }
+    </style>
+    <script src="./src/script.js"></script>
+  </head>
+
+  <body
+    class="leading-normal tracking-normal text-orange-400 m-6 bg-cover bg-fixed bg-repeat-y"
+    style="background-image: url('header2.png')"
+  >
+    <div class="h-full">
+      <!--Main-->
+      <div
+        class="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col items-center"
+      >
+        <!--Left Col-->
+        <div
+          class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden"
+        >
+          <h1
+            class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left"
+          >
+            Hey,
+            <span
+              id="colorful-text"
+              class="bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-violet-400"
+            >
+              I'm Zach
+            </span>
+          </h1>
+          <div
+            class="flex flex-row self-center md:self-start leading-normal text-base md:text-2xl mb-8 text-center md:text-left"
+          >
+            <div class="w-full mr-2 hidden md:block">
+              Get in touch <span>></span>
             </div>
+            <!-- LinkedIn -->
+            <a
+              class="mt-0.5 mr-4 inline-block text-indigo-300 no-underline hover:text-orange-400 hover:text-underline text-center h-10 md:h-auto transform hover:scale-125 duration-300 ease-in-out"
+              href="https://www.linkedin.com/in/zachary-maludzinski/"
+            >
+              <svg
+                class="fill-current h-9 md:h-7"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                />
+              </svg>
+            </a>
+            <!-- GitHub -->
+            <a
+              class="mt-0.5 mr-4 inline-block text-indigo-300 no-underline hover:text-orange-400 hover:text-underline text-center h-10 md:h-auto transform hover:scale-125 duration-300 ease-in-out"
+              href="https://www.github.com/zmalski"
+            >
+              <svg
+                class="fill-current h-9 md:h-7"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6c.1-11.4 .1-28.8 .1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1 76-9.2 76-73.1c0-18.2-6.5-27.3-17.1-39c1.7-4.3 7.4-22-1.7-45c-13.9-4.3-45.7 17.9-45.7 17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9c-9.1 22.9-3.5 40.6-1.7 45c-10.6 11.7-15.6 20.8-15.6 39c0 63.6 37.3 69 74.3 73.1c-4.8 4.3-9.1 11.7-10.6 22.3c-9.5 4.3-33.8 11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-.2-1.1 10.2-1.1 10.2c10.8 5 18.4 24.2 18.4 24.2c9.7 29.7 56.1 19.7 56.1 19.7c0 9 .1 21.7 .1 30.6c0 4.8 .1 8.6 .1 10c0 4.3-3 9.5-11.5 8C106 393.6 59.8 330.8 59.8 257.4c0-91.8 70.2-161.5 162-161.5s166.2 69.7 166.2 161.5c.1 73.4-44.7 136.3-110.7 158.3c-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2c1.9-.2 3.7 .6 3.9 1.9c.3 1.3-1 2.6-3 3c-1.9 .4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2 .2-3.7-.9-3.7-2.4c0-1.3 1.5-2.4 3.5-2.4c1.9-.2 3.7 .9 3.7 2.4c0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4c-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1c.9-1.1 2.8-.9 4.3 .6c1.3 1.3 1.8 3.3 .9 4.1c-.9 1.1-2.8 .9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3c1.1 1.5 1.1 3.3 0 4.1c-.9 .6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5c.9-.9 2.4-.4 3.5 .6c1.1 1.3 1.3 2.8 .4 3.5c-.9 .9-2.4 .4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6c.4-.6 1.5-.9 2.8-.4c1.3 .7 1.9 1.8 1.5 2.6c-.4 .9-1.7 1.1-2.8 .4z"
+                />
+              </svg>
+            </a>
+            <!-- Email -->
+            <a
+              class="mt-0.5 mr-4 inline-block text-indigo-300 no-underline hover:text-orange-400 hover:text-underline text-center h-10 md:h-auto transform hover:scale-125 duration-300 ease-in-out"
+              href="mailto:zacharymaludzinski@gmail.com"
+            >
+              <svg
+                class="fill-current h-9 md:h-7"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM218 271.7L64.2 172.4C66 156.4 79.5 144 96 144H352c16.5 0 30 12.4 31.8 28.4L230 271.7c-1.8 1.2-3.9 1.8-6 1.8s-4.2-.6-6-1.8zm29.4 26.9L384 210.4V336c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V210.4l136.6 88.2c7 4.5 15.1 6.9 23.4 6.9s16.4-2.4 23.4-6.9z"
+                />
+              </svg>
+            </a>
+            <!-- Phone -->
+            <a
+              class="mt-0.5 mr-4 inline-block text-indigo-300 no-underline hover:text-orange-400 hover:text-underline text-center h-10 md:h-auto transform hover:scale-125 duration-300 ease-in-out"
+              href="tel:+1587-589-4157"
+            >
+              <svg
+                class="fill-current h-9 md:h-7"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm90.7 96.7c9.7-2.6 19.9 2.3 23.7 11.6l20 48c3.4 8.2 1 17.6-5.8 23.2L168 231.7c16.6 35.2 45.1 63.7 80.3 80.3l20.2-24.7c5.6-6.8 15-9.2 23.2-5.8l48 20c9.3 3.9 14.2 14 11.6 23.7l-12 44C336.9 378 329 384 320 384C196.3 384 96 283.7 96 160c0-9 6-16.9 14.7-19.3l44-12z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="navbar navbar-dark shadow-sm">
-            <div class="container">
-                <a href="#" class="navbar-brand d-flex align-items-center">
-                    <strong>Zach's Website</strong>
+        <!-- About Me Section -->
+        <div class="pt-8 md:pt-16 xl:w-2/5 w-full">
+          <h1 class="text-3xl text-gray-300 font-bold text-left mr-auto">
+            Who am I?
+          </h1>
+          <p class="text-indigo-300">Software Developer | Tinkerer | Builder</p>
+          <p class="mt-2 lg:mr-24 xl:mr-0">
+            I'm not just a software engineer; I'm a tech enthusiast, a curious
+            hacker, and a relentless learner. Fueled by curiosity, I'm
+            constantly drawn to new technologies, eager to dive in and master
+            them. I thrive in collaborative settings and I'm at my best in
+            dynamic environments where innovation flourishes. Problem-solving is
+            my passion, whether it's unraveling complex coding challenges or
+            exploring fresh perspectives in life. Beyond the screen, you can probably find
+            me soldering electronics, camping by a lake or playing sports.
+          </p>
+        </div>
+        <!-- Skills Section -->
+        <div class="pt-8 md:pt-16 xl:w-2/5 w-full">
+          <h1 class="text-3xl text-gray-300 font-bold text-left mr-auto">
+            My Skills
+          </h1>
+          <div class="flex flex-row mt-4">
+            <div>
+              <h2 class="text-xl font-bold">Languages</h2>
+              <ul class="mt-2">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Java</li>
+                <li>HTML/CSS</li>
+                <li>PHP</li>
+                <li>C</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+            <div class="ml-16">
+              <h2 class="text-xl font-bold">Frameworks</h2>
+              <ul class="mt-2">
+                <li>Django</li>
+                <li>Vue.js</li>
+                <li>Laravel</li>
+                <li>Nuxt.js</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Projects Section -->
+        <div class="pt-8 md:pt-16 xl:w-2/5 w-full">
+          <h1 class="text-3xl text-gray-300 font-bold text-left mr-auto">
+            Projects
+          </h1>
+          <p class="text-indigo-300 text-sm">
+            More projects available at
+            <a class="underline" href="https://www.github.com/zmalski"
+              >my GitHub.</a
+            >
+          </p>
+          <div class="mt-4">
+            <div>
+              <h1 class="text-xl font-bold">
+                <a href="http://www.ego-grapher.com">Ego-Grapher</a>
+              </h1>
+              <p class="text-sm text-indigo-300 leading-tight">
+                Completed in 2020
+              </p>
+            </div>
+            <div class="flex flex-col-reverse sm:flex-row">
+              <div class="flex flex-col sm:w-3/5 md:w-2/5 xl:w-3/5 flex-1">
+                <p class="mt-2">
+                  Built near the end of my university term as a personal
+                  project. Generates a graph originating from a single term
+                  provided by the user. That term is fed back in to Google
+                  auto-complete to form the next nodes in the graph. Rinse,
+                  repeat and you can get some interesting results.
+                </p>
+              </div>
+              <div class="md:mr-20 lg:mr-72 xl:mr-0">
+                <a href="http://www.ego-grapher.com">
+                  <img
+                    class="h-56 sm:h-44 md:h-56 lg:h-60 xl:h-56 2xl:h-60"
+                    src="public/images/egographer.png"
+                  />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <figcaption class="text-indigo-300 text-sm">
+                  Example of graph generated at
+                  <a class="underline" href="http://www.ego-grapher.com"
+                    >ego-grapher.com</a
+                  >
+                </figcaption>
+              </div>
             </div>
+          </div>
         </div>
-    </header>
-
-    <main>
-
-        <section class="py-5 text-center container">
-            <div class="row py-lg-5">
-                <div class="mx-auto">
-                    <h1 class="ml11">
-                        <span class="tags">&lt;</span>
-                        <span class="text-wrapper">
-                            <span class="line line1"></span>
-                            <span class="letters">Zachary Maludzinski</span>
-                        </span>
-                        <span class="tags">/&gt;</span>
-                    </h1>
-                    <p class="lead fw-normal">
-                        I'm a professional software engineer and a graduate from the University of British Columbia. I'm inspired by
-                        new and emerging technologies, with curiosity fueling my constant desire to learn. I thrive in a
-                        dynamic and collaborative environment that allows me to expand
-                        my horizons. I love to solve problems and explore new approaches in all aspects of life.</p>
-                    <p>
-                        <a href="#" class="btn btn-primary my-2 btn-lg" role="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarHeader">Contact</a>
-                    </p>
+        <!-- Experience Section -->
+        <div class="pt-8 md:pt-16 xl:w-2/5 w-full">
+          <h1 class="text-3xl text-gray-300 font-bold text-left mr-auto">
+            Experience
+          </h1>
+          <div class="mt-4">
+            <div
+              class="flex flex-row h-[430px] sm:h-60 lg:h-56 xl:h-72 2xl:h-72"
+            >
+              <div class="w-20 sm:w-1/6 lg:w-1/12 xl:w-1/6 text-lg">
+                Grainfox
+              </div>
+              <p
+                class="inline-block h-full min-h-[1.5em] w-0.5 self-stretch bg-indigo-100 opacity-50"
+              />
+              <div class="ml-2 mt-1 text-sm text-indigo-300">></div>
+              <div
+                class="flex flex-col ml-4 w-3/5 sm:w-4/5 flex-1 lg:mr-24 xl:mr-0"
+              >
+                <div class="text-sm mt-1 text-indigo-300">
+                  May 2021 - January 2022
                 </div>
+                <div>
+                  <h2 class="text-xl font-semibold">Software Engineer</h2>
+                </div>
+                <div>
+                  <p>
+                    Performed full-stack development on a wide range of projects
+                    for ag-tech web application. Worked with Django, Vue.js,
+                    large MySQL tables. Deployed customer-facing code to
+                    production daily. Primary point of contact and interviewer
+                    for co-op software developer intake from major universities
+                    across Canada.
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
-
-
-        <div class="container marketing">
-            <div class="row">
-                <div class="col-lg-6 text-center">
-                    <svg class="h-6 w-6 rounded-circle" width="140" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" height="140" xmlns="http://www.w3.org/2000/svg" role="img"
-                        aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
-
-                    <h2>Languages</h2>
-                    <ul class="list-group list-group-flush fw-bold">
-                        <li class="list-group-item">Python</li>
-                        <li class="list-group-item">Javascript</li>
-                        <li class="list-group-item">SQL</li>
-                        <li class="list-group-item">Java</li>
-                        <li class="list-group-item">HTML/CSS</li>
-                        <li class="list-group-item">C</li>
-                        <li class="list-group-item">PHP</li>
-                    </ul>
+            <div
+              class="flex flex-row h-[460px] sm:h-60 lg:h-56 xl:h-80 2xl:h-72"
+            >
+              <div class="w-20 sm:w-1/6 lg:w-1/12 xl:w-1/6"></div>
+              <p
+                class="inline-block h-full min-h-[1.5em] w-0.5 self-stretch bg-indigo-100 opacity-50"
+              />
+              <div class="ml-2 text-sm text-indigo-300">></div>
+              <div
+                class="flex flex-col ml-4 w-3/5 sm:w-4/5 flex-1 lg:mr-24 xl:mr-0"
+              >
+                <div class="text-sm text-indigo-300">
+                  January 2022 - April 2023
                 </div>
-                <div class="col-lg-6 text-center">
-                    <svg class="h-6 w-6 rounded-circle" width="140" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" height="140" xmlns="http://www.w3.org/2000/svg" role="img"
-                        aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                    </svg>
-                    <h2>Frameworks</h2>
-                    <ul class="list-group list-group-flush fw-bold">
-                        <li class="list-group-item">Vue.js</li>
-                        <li class="list-group-item">Django</li>
-                        <li class="list-group-item">Laravel</li>
-                        <li class="list-group-item">Alpine.js</li>
-                        <li class="list-group-item">Livewire</li>
-                        <li class="list-group-item">Node.js</li>
-                        <li class="list-group-item">CUDA</li>
-                    </ul>
+                <div>
+                  <h2 class="text-xl font-semibold">Lead Software Engineer</h2>
                 </div>
-
-            <div data-aos="fade-in">
-                <h2 class="mt-5">Major Projects</h2>
-                <hr class="featurette-divider-top">
+                <div>
+                  <p>
+                    Led a team of 6 software developers in delivering product
+                    goals. Collaborated with stakeholders across the product
+                    spectrum to ensure efficient and on-time delivery of
+                    features and projects. Led the development and deployment of
+                    a variety of microservices including payment processer
+                    integration surpassing $250,000 MRR.
+                  </p>
+                </div>
+              </div>
             </div>
-
-            <div class="row featurette" data-aos="fade-left">
-                <div class="col-md-7">
-
-                    <h2 class="featurette-heading">Ego-Grapher</h2>
-
-                    <p class="lead">Built with Javascript and styled with Bootstrap, involves virtually no back-end programming. A
-                        fun side-project I decided to tackle when <a
-                            href="https://medium.com/applied-data-science/the-google-vs-trick-618c8fd5359f">this</a>
-                        article by David
-                        Foster sparked my curiosity. Generates a graph from a single term provided by the user combined
-                        with Google auto-complete results. I also deployed a CORS proxy server for this site utilizing
-                        Node.js on <a href="https://www.heroku.com/">heroku.com</a>.</p>
-                    <a href="http://www.ego-grapher.com">
-                        <button 
-                            type="button"
-                            class="btn btn-sm btn-outline-secondary mb-3 mb-md-0"
-                        >
-                        View Website
-                        </button>
-                    </a>
+          </div>
+        </div>
+        <!-- Education Section -->
+        <div class="pt-8 md:pt-16 xl:w-2/5 w-full">
+          <h1 class="text-3xl text-gray-300 font-bold text-left mr-auto">
+            Education
+          </h1>
+          <div class="mt-4">
+            <div
+              class="flex flex-row h-40 sm:h-32 lg:h-28"
+            >
+              <div class="w-24 sm:w-1/6 lg:w-1/6 xl:w-1/5 text-lg pr-4">
+                University of British Columbia
+              </div>
+              <p
+                class="inline-block h-full min-h-[1.5em] w-0.5 self-stretch bg-indigo-100 opacity-50"
+              />
+              <div
+                class="flex flex-col ml-4 w-3/5 sm:w-4/5 flex-1 lg:mr-24 xl:mr-0"
+              >
+                <div class="text-sm mt-1 text-indigo-300">
+                  September 2016 - April 2021
                 </div>
-                <div class="col-md-5">
-                    <img class=" featurette-image img-fluid mx-auto" width="500" height="500" focusable="false"
-                        src="public/images/egographer.png" />
-
+                <div>
+                  <h2 class="text-xl font-semibold">Bachelor of Science</h2>
                 </div>
+                <div>
+                  <p>
+                    Major in Computer Science
+                  </p>
+                </div>
+              </div>
             </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette" data-aos="fade-right">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Home Together Canada</h2>
-                    <p class="lead">
-                        Built using the TALL stack (Tailwind CSS, Alpine.js, Laravel, Livewire) with MySQL
-                        database integration. Capstone project for university degree that was completed over a year with
-                        a group of peers for our client, Home Together Canada.
-                        Source is currently private.
-                    </p>
-                    <button 
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary mb-3 mb-md-0"
-                        data-bs-toggle="modal"
-                        data-bs-target="#screenshotModal"
-                    >
-                        View Screenshots
-                    </button>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img class=" featurette-image img-fluid mx-auto" width="500" height="500" focusable="false"
-                        src="public/images/hometogether.png" />
-
-                </div>
-            </div>
-            <div data-aos="fade-in">
-                <h2 class="edutitle">Education</h2>
-                <hr class="featurette-divider-top">
-            </div>
-
-            <div class="row featurette" data-aos="fade-left">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">University of British Columbia</h2>
-                    <p class="lead">Bachelor of Science with a Major in Computer Science</p>
-                </div>
-                <div class="col-md-5">
-                    <img class=" featurette-image img-fluid mx-auto" width="500" height="500" focusable="false"
-                        src="public/images/ubclogo.png" />
-
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-
+          </div>
         </div>
 
-
-        <div class="modal fade" id="screenshotModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="screenshotModalLabel">Home Together Canada Screenshots</h5>
-                        <button type="button" class="btn-close text-light" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-                        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                                    aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"
-                                    aria-label="Slide 5"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="public/images/homepage.png">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="public/images/admin_accounts.png">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="public/images/admin_listings.png">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="public/images/admin_reports.png">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="public/images/admin_export.png">
-                                </div>
-
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!--Footer-->
+        <div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
+          <a class="text-gray-500 no-underline hover:no-underline" href="#"
+            >&copy; Zachary Maludzinski 2024</a
+          >
         </div>
-
-
-
-    </main>
-
-    <footer class="text-muted py-5">
-        <div class="container">
-            <p class="float-end mb-1">
-                <a href="#">Back to top</a>
-            </p>
-            <p class="mb-1">Thanks for visiting!</p>
-        </div>
-    </footer>
-
-
-    <script type="text/javascript" src="./public/js/lib/anime.min.js"></script>
-    <script type="text/javascript" src="./public/js/lib/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="./public/js/lib/masonry.pkgd.min.js"></script>
-    <script type="text/javascript" src="./public/js/animate.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-
-</body>
-
+      </div>
+    </div>
+  </body>
 </html>
